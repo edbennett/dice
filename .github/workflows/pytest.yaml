@@ -27,5 +27,5 @@ jobs:
         conda list
     - name: Test with pytest
       run: |
-        pytest
+        $CONDA/bin/pytest
         
