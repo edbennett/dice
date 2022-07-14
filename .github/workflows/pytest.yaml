@@ -25,4 +25,7 @@ jobs:
         conda info
         conda install pytest
         conda list
+    - name: Test with pytest
+      run: |
+        pytest
         
