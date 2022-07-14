@@ -18,7 +18,7 @@ jobs:
         channels: conda-forge
         activate-environment: bigman
     - run: |
-        conda init
+        conda init bash
         conda install pytest
     - name: Test with pytest
       shell: bash -l {0}
