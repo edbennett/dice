@@ -19,6 +19,7 @@ jobs:
         activate-environment: bigman
     - run: |
         conda init bash
+        conda activate bigman
         conda install pytest
     - name: Test with pytest
       shell: bash -l {0}
