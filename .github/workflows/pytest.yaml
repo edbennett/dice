@@ -17,9 +17,8 @@ jobs:
         python-version: 3.9
         channels: conda-forge
         activate-environment: bigman
-    - run: |
-        conda init bash
-        conda activate bigman
+    - shell: bash -l {0}
+      run: |
         conda install pytest
     - name: Test with pytest
       shell: bash -l {0}
